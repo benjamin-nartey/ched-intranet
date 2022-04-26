@@ -4,9 +4,9 @@
         <div class="publisher-info">
             <span class="read"></span>
             <p class="publisher">
-                by <span class="publisher-name">{{ post.data.author }}</span>
+                By <span class="publisher-name">{{ post.data.author }}</span>
             </p>
-            <span class="date">{{ post.data.date }}</span>
+            <span class="date">{{ post.data.date | postDate }}</span>
         </div>
         <h4 class="news-header">
             {{ post.data.title }}
