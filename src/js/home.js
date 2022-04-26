@@ -112,6 +112,7 @@ document.addEventListener('keydown', function(e) {
 });
 
 
+
 function printpart() {
     var printwin = window.print();
 }

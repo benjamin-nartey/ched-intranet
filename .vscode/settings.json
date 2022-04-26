@@ -1,5 +1,5 @@
-// {
-//   "liveServer.settings.port": 5501,
-//   "vetur.format.defaultFormatter.js": "prettier",
-//   "javascript.format.insertSpaceAfterConstructor": true
-// }
+{
+  "liveServer.settings.port": 5501,
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "javascript.format.insertSpaceAfterConstructor": true
+}
