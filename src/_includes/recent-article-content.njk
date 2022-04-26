@@ -1,43 +1,26 @@
+{%- for post in collections.post | reverse -%}
 <div class="container-grid">
-    <div class="content">
-        {%- for post in collection.post -%}
-
-            {%- endfor %}
-        </div>
-
-    </div>
-
     <div class="content">
         <div class="publisher-info">
             <span class="read"></span>
             <p class="publisher">
-            by <span class="publisher-name">Benjamin Nartey</span>
+                by <span class="publisher-name">{{ post.data.author }}</span>
             </p>
-            <span class="date">April 6, 2022</span>
+            <span class="date">{{ post.data.date }}</span>
         </div>
         <h4 class="news-header">
-          How to be your own Boss. 9 useful tips to help you start your
-          Entreprenure journey
+            {{ post.data.title }}
         </h4>
         <p class="news-content">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
-          placeat ipsum numquam magnam, quod consectetur natus! Distinctio sit
-          quas eius cum? Nemo animi, ad nulla cum sapiente soluta recusandae
-          similique at totam repellat iure laborum architecto eos distinctio
-          hic veniam commodi, repudiandae optio quaerat mollitia molestias
-          natus magni quam accusamus! Voluptates beatae ullam ipsa quos
-          possimus nisi voluptatum neque, voluptate minus, eligendi ea
-          consequuntur. Expedita cupiditate libero alias inventore aliquam
-          praesentium nesciunt ipsum tempora molestias, neque excepturi sint
-          molestiae, corrupti doloremque velit. Excepturi consectetur maiores
-          delectus enim, sapiente nobis adipisci quaerat voluptatem esse
-          dolorem architecto neque nesciunt hic reprehenderit voluptas.
+            {{ post.data.content }}
         </p>
     </div>
     <a class="more"></a>
     <figure>
-        <img class="news-img" src="img/pexels-jopwell-2422287.jpg" alt="president of ghana"/>
+        <img class="news-img" src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}" />
         <figcaption>
-          The President of Ghana International Conference with UNICEF
+            {{ post.data.imageCaption }}
         </figcaption>
     </figure>
+</div>
+{%- endfor -%}

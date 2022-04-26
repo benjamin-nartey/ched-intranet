@@ -1,12 +1,8 @@
 ---
-title: My First Article
+title: My Second Article
 author: Rita Afrifa
 date: 2022-04-18
-image: /img/Nana Addo.jpg
-imageAlt: president of Ghana
-imageCaption: The President of Ghana International Conference with UNICEF
----
-
+content:
   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
           placeat ipsum numquam magnam, quod consectetur natus! Distinctio sit
           quas eius cum? Nemo animi, ad nulla cum sapiente soluta recusandae
@@ -19,3 +15,7 @@ imageCaption: The President of Ghana International Conference with UNICEF
           molestiae, corrupti doloremque velit. Excepturi consectetur maiores
           delectus enim, sapiente nobis adipisci quaerat voluptatem esse
           dolorem architecto neque nesciunt hic reprehenderit voluptas.
+image: /img/Nana Addo.jpg
+imageAlt: president of Ghana
+imageCaption: The President of Ghana International Conference with UNICEF
+---

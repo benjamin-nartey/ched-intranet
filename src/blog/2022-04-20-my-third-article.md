@@ -1,13 +1,8 @@
 ---
-title: My First Article
+title: My Third Article
 author: Henrick Teye
 date: 2022-04-20
-image: /img/dampare.jpg
-imageAlt: president of Ghana
-imageCaption: The President of Ghana International Conference with UNICEF
----
-
-  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
+content:  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
           placeat ipsum numquam magnam, quod consectetur natus! Distinctio sit
           quas eius cum? Nemo animi, ad nulla cum sapiente soluta recusandae
           similique at totam repellat iure laborum architecto eos distinctio
@@ -19,3 +14,9 @@ imageCaption: The President of Ghana International Conference with UNICEF
           molestiae, corrupti doloremque velit. Excepturi consectetur maiores
           delectus enim, sapiente nobis adipisci quaerat voluptatem esse
           dolorem architecto neque nesciunt hic reprehenderit voluptas.
+image: /img/dampare.jpg
+imageAlt: president of Ghana
+imageCaption: The President of Ghana International Conference with UNICEF
+---
+
+ 
