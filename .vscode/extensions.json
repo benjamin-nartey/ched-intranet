@@ -1,3 +1,7 @@
 {
-  "recommendations": ["eseom.nunjucks-template"]
+  "recommendations": [
+    "eseom.nunjucks-template",
+    "mikestead.dotenv",
+    "vincaslt.highlight-matching-tag"
+  ]
 }
