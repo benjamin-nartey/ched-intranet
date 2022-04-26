@@ -30,7 +30,6 @@ for (let i = 0; i < more.length; i++) {
 }
 
 
-
 //Recent news
 const seeAll = document.querySelector('.see-all');
 const newsSection = document.querySelector('.recent-news')

@@ -29,6 +29,7 @@ for (let i = 0; i < more.length; i++) {
 
 }
 
+
 //Recent news
 const seeAll = document.querySelector('.see-all');
 const newsSection = document.querySelector('.recent-news')
@@ -110,8 +111,10 @@ document.addEventListener('keydown', function(e) {
 });
 
 
+
 function printpart() {
     var printwin = window.print();
 }
 
+printDoc.addEventListener('click', printpart)
 printDoc.addEventListener('click', printpart)
