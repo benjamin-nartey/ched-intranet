@@ -1,0 +1,25 @@
+ {%- for post in collections.circular | reverse -%}
+ 
+ <div class="circular-card circular-card-1">
+      <div class="memo-destination">
+        <h5>
+          <span>TO:</span>
+          <span>{{ post.data.destination }}</span>
+        </h5>
+      </div>
+      <div class="circular-card-content">
+        <h3>{{ post.data.title }}</h3>
+        <p>
+          {{ post.data.content }}
+        </p>
+        <div class="signed-box">
+          <h5>
+            <span>SIGNED</span>
+            <span>{{ post.data.signature }}</span>
+            <span>{{ post.data.designation }}</span>
+          </h5>
+         
+        </div>
+      </div>
+    </div>
+    {%- endfor -%}

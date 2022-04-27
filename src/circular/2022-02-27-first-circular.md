@@ -1,6 +1,8 @@
 ---
 destination: TO ALL MEMBERS OF STAFF
 date: 2022-04-15
+tags: ["circular"]
+referenceNo: CHED/CG/V.9/364
 title: SUSPENSION OF RENT AND SPECIAL LOAN
 content: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
   placeat ipsum numquam magnam, quod consectetur natus! Distinctio sit

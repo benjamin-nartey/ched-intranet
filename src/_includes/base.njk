@@ -10,7 +10,10 @@
 <body>
  {% include 'header.njk' %}
  {% include 'recent-article.njk' %}
+ {% include 'see-all-recent-news.njk' %}
+  {% include 'circular-section.njk' %}
    {{ content | safe }}
+   {% include 'circular-form.njk' %}
    {% include 'footer.njk' %}
 </body>
 </html>
