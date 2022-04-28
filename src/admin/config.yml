@@ -17,7 +17,7 @@ backend:
         - { label: "Image", name: "image", widget: "image" }
         - { label: "Image Caption", name: "imageCaption", widget: "string" }
         - { label: "Content", name: "content", widget: "markdown" }
-        - name: "circular"
+    - name: "circular"
         label: "Circular"
         folder: "src/circular"
         create: true
