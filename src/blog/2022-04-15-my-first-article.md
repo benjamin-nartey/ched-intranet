@@ -2,6 +2,7 @@
 title: My First Article
 author: Benjamin Nartey
 date: 2022-04-15
+tags: ["post"]
 content:  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
           placeat ipsum numquam magnam, quod consectetur natus! Distinctio sit
           quas eius cum? Nemo animi, ad nulla cum sapiente soluta recusandae

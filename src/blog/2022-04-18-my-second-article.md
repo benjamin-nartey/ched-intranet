@@ -2,6 +2,7 @@
 title: My Second Article
 author: Rita Afrifa
 date: 2022-04-18
+tags: ["post"]
 content:
   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
           placeat ipsum numquam magnam, quod consectetur natus! Distinctio sit

@@ -17,6 +17,6 @@ content: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
   delectus enim, sapiente nobis adipisci quaerat voluptatem esse
   dolorem architecto neque nesciunt hic reprehenderit voluptas.
 signature: DR. JERRY OWUSU ANSWER
-designation: DIRECTOR(HEALTH)
+rank: DIRECTOR(HEALTH)
 cc: Mr. Charles Walami
 ---
