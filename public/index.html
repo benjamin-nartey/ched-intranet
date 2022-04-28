@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
     <title>CHED Intranet</title>
     <link rel = "stylesheet" href = "/css/style.css">
 </head>
@@ -152,7 +154,7 @@ consequuntur. Expedita cupiditate libero alias inventore aliquam praesentium nes
           <h5>
             <span>SIGNED</span>
             <span>DR. JERRY OWUSU ANSWER</span>
-            <span>DIRECTOR(HEALTH)</span>
+            <span></span>
           </h5>
          
         </div>
@@ -173,7 +175,7 @@ consequuntur. Expedita cupiditate libero alias inventore aliquam praesentium nes
           <h5>
             <span>SIGNED</span>
             <span>DR. JERRY OWUSU ANSWER</span>
-            <span>DIRECTOR(HEALTH)</span>
+            <span></span>
           </h5>
          
         </div>
@@ -293,6 +295,16 @@ consequuntur. Expedita cupiditate libero alias inventore aliquam praesentium nes
   });
 
   AOS.init();
+  
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
 </script>
 </body>
    <div class="modal circular-modal hidden">
@@ -332,7 +344,7 @@ consequuntur. Expedita cupiditate libero alias inventore aliquam praesentium nes
       <h5>
         <span>SIGNED</span>
         <span>DR. JERRY OWUSU ANSWER</span>
-        <span>DIRECTOR(HEALTH)</span>
+        <span></span>
       </h5>
     </div>
   </div>
@@ -371,7 +383,7 @@ consequuntur. Expedita cupiditate libero alias inventore aliquam praesentium nes
       <h5>
         <span>SIGNED</span>
         <span>DR. JERRY OWUSU ANSWER</span>
-        <span>DIRECTOR(HEALTH)</span>
+        <span></span>
       </h5>
     </div>
   </div>
