@@ -23,14 +23,14 @@ backend:
         create: true
         slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
         fields:
-         - { label: "Destination", name: "destination", widget: "string" }
-         - { label: "Title", name: "title", widget: "string" }
-          - { label: "Date", name: "date", widget: "datetime" }
+        - { label: "Destination", name: "destination", widget: "string" }
+        - { label: "Title", name: "title", widget: "string" }
+        - { label: "Date", name: "date", widget: "datetime" }
         - { label: "Tag", name: "tags", widget: "list", default: ["circular"] }
-         - { label: "Reference No", name: "referenceNo", widget: "string" }
-          - { label: "Content", name: "content", widget: "markdown" }
-           - { label: "Signature", name: "signature", widget: "string" }
-            - { label: "Rank", name: "rank", widget: "string" }
-             - { label: "CC", name: "cc", widget: "list" }
+        - { label: "Reference No", name: "referenceNo", widget: "string" }
+        - { label: "Content", name: "content", widget: "markdown" }
+        - { label: "Signature", name: "signature", widget: "string" }
+        - { label: "Rank", name: "rank", widget: "string" }
+        - { label: "CC", name: "cc", widget: "list" }
 
 
