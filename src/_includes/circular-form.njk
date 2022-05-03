@@ -2,44 +2,7 @@
 {%- for post in collections.circular | reverse -%}
 
 <div class="modal circular-modal hidden">
-  <div class="header-address">
-    <img src="img/chedlogo2.png" alt="" class="circular-logo" />
-    <div class="address">
-      <h3>
-        <span>COCOA HEALTH AND EXTENTION DIVISION</span>
-        <span>(COCOBOD)</span>
-      </h3>
-      <span class="line"></span>
-      <p>
-        P.O.BOX 3197, Accra - Ghana | Tel: 233 - 302 - 666946 - 9 | Fax: 233 -
-        302 - 665893 / 668695
-      </p>
-    </div>
-  </div>
-  <div class="reference-container">
-    <div class="reference-header-box">
-      <span>My Ref. No <input type="text" name="myRefrence" id="myReference" value = "{{ post.data.referenceNo }}" readonly/></span>
-      <span>Your Ref. No
-        <input type="text" name="yourRefrence" id="yourReference" /></span>
-    </div>
-    <span class="date-text"> Date:<span class="date">{{ post.data.date | postDate }}</span></span>
-  </div>
-  <div class="memo-destination">
-    <h5>{{ post.data.destination }}</h5>
-  </div>
-  <div class="circular-card-content">
-    <h3>{{ post.data.title }}</h3>
-    <p>
-      {{ post.data.content }}
-    </p>
-    <div class="signed-box">
-      <h5>
-        <span>SIGNED</span>
-        <span>{{ post.data.signature }}</span>
-        <span>{{ post.data.rank }}</span>
-      </h5>
-    </div>
-  </div>
+ <embed src = "{{ post.data.file }}" type = "application/pdf" style = "width:100%; height:100%"></embed>
 </div>
 
 {%- endfor -%}

@@ -2,9 +2,8 @@
 destination: TO ALL NSS PERSONNELS
 date: 2022-04-25
 tags: ["circular"]
-referenceNo: CHED/CG/V.9/364
 title: CLEANING EXCERSICE THIS FRIDAY
-content: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
+description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
   placeat ipsum numquam magnam, quod consectetur natus! Distinctio sit
   quas eius cum? Nemo animi, ad nulla cum sapiente soluta recusandae
 
@@ -17,5 +16,5 @@ content: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
   praesentium nesciunt ipsum tempora molestias, neque excepturi sint
 signature: DR. JERRY OWUSU ANSWER
 designation: DIRECTOR(HEALTH)
-cc: Mr. Charles Walami
+file: img/Statement_44273_54913_17.pdf
 ---

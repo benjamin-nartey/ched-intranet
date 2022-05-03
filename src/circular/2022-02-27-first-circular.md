@@ -2,9 +2,8 @@
 destination: TO ALL MEMBERS OF STAFF
 date: 2022-04-15
 tags: ["circular"]
-referenceNo: CHED/CG/V.9/364
 title: SUSPENSION OF RENT AND SPECIAL LOAN
-content: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
+description: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
   placeat ipsum numquam magnam, quod consectetur natus! Distinctio sit
   quas eius cum? Nemo animi, ad nulla cum sapiente soluta recusandae
   similique at totam repellat iure laborum architecto eos distinctio
@@ -18,5 +17,5 @@ content: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo
   dolorem architecto neque nesciunt hic reprehenderit voluptas.
 signature: DR. JERRY OWUSU ANSWER
 rank: DIRECTOR(HEALTH)
-cc: Mr. Charles Walami
+file: img/Statement_44273_54913_17.pdf
 ---
