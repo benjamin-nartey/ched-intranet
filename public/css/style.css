@@ -119,7 +119,7 @@ header .header-content {
 
 .text-box h1 span:nth-child(1) {
   display: block;
-  font-size: 5rem;
+  font-size: 3.8rem;
   font-weight: 700;
   letter-spacing: 0.85rem;
   animation: move-bottom 3s ease-out;
@@ -127,9 +127,9 @@ header .header-content {
 
 .text-box h1 span:nth-child(2) {
   display: block;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 900;
-  letter-spacing: 2.2rem;
+  letter-spacing: 1.8rem;
   animation: move-top 3s ease-out;
 }
 
@@ -915,23 +915,120 @@ height: 297mm; */
 } */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    padding: 1rem;
+    background-color: #151515;
+  }
   nav {
     position: fixed;
-    width: 15vw;
+    width: 20vw;
+    height: 50vh;
     background-color: #000;
-    top: 5vh;
+    top: 0;
     left: 0;
     display: flex;
     font-size: 1.6rem;
     color: #fff;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 1rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 3rem 1rem;
     z-index: 5;
   }
   nav ul {
+    top: 0;
     display: flex;
     gap: 3rem;
+    width: 15rem;
     flex-direction: column;
+  }
+  nav ul li {
+    list-style: none;
+    width: 15rem;
+  }
+
+  nav img {
+    display: none;
+  }
+
+  .sticky {
+    width: 20vw;
+  }
+
+  .text-box h1 span:nth-child(1) {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 0.65rem;
+    animation: move-bottom 3s ease-out;
+  }
+
+  .text-box h1 span:nth-child(2) {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 900;
+    letter-spacing: 1.6rem;
+    animation: move-top 3s ease-out;
+  }
+
+  .text-box p {
+    font-size: 1.4rem;
+    color: #e1e1e1;
+    font-weight: 300;
+    padding-top: 2rem;
+    letter-spacing: 0.3rem;
+  }
+
+  section {
+    width: 100%;
+    padding: 2rem 1rem;
+    margin-bottom: 10rem;
+  }
+
+  .news-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 1rem;
+  }
+
+  .news-grid .container-grid figure {
+    width: 100%;
+    height: auto;
+  }
+
+  .news-grid .container-grid figure .news-img {
+    width: 30rem;
+    height: 30rem;
+    object-fit: cover;
+  }
+
+  .news-grid .container-grid .content {
+    position: relative;
+    height: 25rem;
+    width: 30rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    transition: all 0.5s;
+  }
+
+  .circular-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .circular-grid > .circular-card {
+    display: grid;
+    place-items: center;
+    height: 35rem;
+  }
+
+  .requisition-grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    transform-style: preserve-3d;
   }
 }
