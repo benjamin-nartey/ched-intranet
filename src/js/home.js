@@ -69,24 +69,31 @@ for (let i = 0; i < navLink.length; i++) {
 //modals
 
 const circularModal = document.getElementsByClassName("circular-modal");
-const printDoc = document.querySelector(".print-doc");
 const overlay = document.querySelector(".overlay");
 const circularCard = document.querySelectorAll(".circular-card");
-
-function closeModal() {
-  for (let i = 0; i < circularModal.length; i++) {
-    circularModal[i].classList.add("hidden");
-    overlay.classList.add("hidden");
-    printDoc.classList.add("hidden");
-  }
-}
 
 for (let i = 0; i < circularCard.length; i++) {
   circularCard[i].addEventListener("click", function openModal() {
     circularModal[i].classList.remove("hidden");
     overlay.classList.remove("hidden");
-    printDoc.classList.remove("hidden");
   });
+}
+
+// for (let i = 0; i < circularCard.length; i++) {
+//   overlay.addEventListener("click", function closeModal() {
+//     for (let i = 0; i < circularModal.length; i++) {
+//       circularModal[i].classList.add("hidden");
+//       overlay.classList.add("hidden");
+//       printDoc.classList.add("hidden");
+//     }
+//   });
+// }
+
+function closeModal() {
+  for (let i = 0; i < circularModal.length; i++) {
+    circularModal[i].classList.add("hidden");
+  }
+  overlay.classList.add("hidden");
 }
 
 overlay.addEventListener("click", closeModal);
@@ -99,9 +106,15 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
-//REMOVE STICKY ON SMALLER SCREENS
+const menuToggle = document.querySelector("#menu");
 
-// function checkScreen() {
-//   if (window.innerWidth < 768) {
-//   }
-// }
+menuToggle.addEventListener("click", function () {
+  if (navbar.style.display !== "block") {
+    navbar.style.display = "block";
+    navbar.style.animation = "move-right";
+    navbar.style.animationDuration = ".5s";
+    navbar.style.animationTimingFunction = "ease-out";
+  } else {
+    navbar.style.display = "none";
+  }
+});
