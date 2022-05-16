@@ -1,6 +1,6 @@
-// When the user scrolls the page, execute myFunction
+// When the user scrolls the page, execute  scrollFunction
 window.onscroll = function () {
-  myFunction();
+  scrollFunction();
 };
 
 // Get the navbar
@@ -10,7 +10,7 @@ var navbar = document.querySelector("nav");
 var sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
+function scrollFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
   } else {
@@ -118,3 +118,31 @@ menuToggle.addEventListener("click", function () {
     navbar.style.display = "none";
   }
 });
+
+//TELEPHONE DIRECTORY FILTER BY ALL COLUMNS
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  var rows = table.getElementsByClassName("row");
+  for (i = 0; i < rows.length; i++) {
+    var cells = rows[i].getElementsByTagName("td");
+    var j;
+    var rowContainsFilter = false;
+    for (j = 0; j < cells.length; j++) {
+      if (cells[j]) {
+        if (cells[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+          rowContainsFilter = true;
+          continue;
+        }
+      }
+    }
+
+    if (!rowContainsFilter) {
+      rows[i].style.display = "none";
+    } else {
+      rows[i].style.display = "";
+    }
+  }
+}

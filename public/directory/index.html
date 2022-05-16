@@ -1,4 +1,131 @@
- <footer class="footer" data-aos="fade-up" data-aos-duration="2000">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <title>Telephone Directory</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel = "stylesheet" href = "/css/style.css">
+</head>
+<body>
+   <span class="material-icons" id="menu">menu</span>
+   <nav class="navigation">
+    <img class="logo" src="/img/chedlogo.png" alt="logo" data-aos="fade-right" data-aos-duration="2000" />
+    <ul class="widget" data-aos="fade-left" data-aos-duration="2000">
+        <li>
+            <a class="nav-link" href="/index.html#">Home</a>
+        </li>
+        <li>
+            <a class="nav-link" href="/index.html#recent-news">Recent News</a>
+        </li>
+        <li>
+            <a class="nav-link" href="/index.html#circular">Circular</a>
+        </li>
+        <li>
+            <a class="nav-link" href="/index.html#requisition">Requisition</a>
+        </li>
+        <li>
+            <a class="nav-link" href="/directory/index.html">Telephone Exchange</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#">Admin Panel</a>
+        </li>
+    </ul>
+</nav>
+   
+<div class = "tbl-container">
+  
+    <input
+      type="text"
+      id="myInput"
+      onkeyup="myFunction()"
+      placeholder="Search for names.."
+      title="Type in a name"
+    />
+
+    <table id="myTable" border="1">
+      <tr id="header" class="header">
+        <th>REGION</th>
+        <th>DISTRICT</th>
+        <th>RANK</th>
+        <th>DEPARTMENT</th>
+        <th>Name</th>
+        <th>EXTENSION</th>
+      </tr>
+      <tr class="row">
+        <td>Accra</td>
+        <td>Okaishei</td>
+        <td>Manager</td>
+        <td>ISD</td>
+        <td>Akfreds Futterkiste</td>
+        <td>2244</td>
+      </tr>
+      <tr class="row">
+        <td>Kumasi</td>
+        <td>Sofo</td>
+        <td>Assistant Officer</td>
+        <td>Telephone Exchange</td>
+        <td>Akfreds Nortey</td>
+        <td>2244</td>
+      </tr>
+      <tr class="row">
+        <td>Tarkoradi</td>
+        <td>Anagye</td>
+        <td>Manager</td>
+        <td>Public Affairs</td>
+        <td>Benjamin Coffie</td>
+        <td>2233</td>
+      </tr>
+      <tr class="row">
+        <td>Accra</td>
+        <td>Okaishei</td>
+        <td>Senior Officer</td>
+        <td>ISD</td>
+        <td>Emmanuel Futterkiste</td>
+        <td>2141</td>
+      </tr>
+      <tr class="row">
+        <td>Eastern</td>
+        <td>Kamscodi</td>
+        <td>Senior Officer</td>
+        <td>Public Affairs</td>
+        <td>Rita Afrifa</td>
+        <td>2254</td>
+      </tr>
+      <tr class="row">
+        <td>Accra</td>
+        <td>Okaishei</td>
+        <td>Manager</td>
+        <td>ISD</td>
+        <td>Akfreds Futterkiste</td>
+        <td>2244</td>
+      </tr>
+      <tr class="row">
+        <td>Accra</td>
+        <td>Okaishei</td>
+        <td>Manager</td>
+        <td>ISD</td>
+        <td>Akfreds Futterkiste</td>
+        <td>2244</td>
+      </tr>
+      <tr class="row">
+        <td>Accra</td>
+        <td>Okaishei</td>
+        <td>Manager</td>
+        <td>ISD</td>
+        <td>Akfreds Futterkiste</td>
+        <td>2244</td>
+      </tr>
+    </table>
+</div>
+ 
+
+    <footer class="footer" data-aos="fade-up" data-aos-duration="2000">
     <div class="footer-container" data-aos="fade-up" data-aos-duration="2000">
       <div class="footer-column footer-colum-1">
         <div class="column-content chedDescriptionContent">
@@ -113,3 +240,6 @@
       </div>
     </div>
   </footer>
+    <script src="/js/home.js"></script>
+</body>
+</html>

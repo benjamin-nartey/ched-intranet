@@ -6,7 +6,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/js/home.js");
   eleventyConfig.addPassthroughCopy("./src/admin/config.yml");
   eleventyConfig.addPassthroughCopy("./src/admin/index.html");
-
   eleventyConfig.addPassthroughCopy("./src/js/vanilla-tilt.min.js");
 
   eleventyConfig.addFilter("postDate", (dateObj) => {
