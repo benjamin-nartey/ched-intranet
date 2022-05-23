@@ -31,7 +31,7 @@ collections:
       - { label: "Signature", name: "signature", widget: "string" }
       - { label: "Rank", name: "rank", widget: "string" }
       - { label: "Upload PDF", name: "file", widget: "file" }
-  - name: "extension"
+  - name: "exchange"
     label: "Directory"
     folder: "src/extension"
     create: true
