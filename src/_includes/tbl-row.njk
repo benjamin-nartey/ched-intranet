@@ -1,0 +1,15 @@
+
+   {%- for post in collections.exchange | reverse -%}
+
+ <tr class="row">
+        <td>{{ post.data.name }}</td>
+        <td>{{ post.data.rank }}</td>
+        <td>{{ post.data.region }}</td>
+        <td>{{ post.data.district }}</td>
+        <td>{{ post.data.department }}</td>
+        <td>{{ post.data.extension }}</td>  
+</tr>
+      
+    
+   {%- endfor -%}   
+ 

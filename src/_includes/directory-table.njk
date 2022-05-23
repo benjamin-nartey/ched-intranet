@@ -1,0 +1,25 @@
+
+
+<div class = "tbl-container">
+    <input
+      type="text"
+      id="myInput"
+      onkeyup="myFunction()"
+      placeholder="Search for names.."
+      title="Type in a name"
+    />
+
+    <table id="myTable" border="1">
+      <tr id="header" class="header">
+        <th>NAME</th>
+        <th>RANK</th>
+        <th>REGION</th>
+        <th>DISTRICT</th>
+        <th>DEPARTMENT</th>
+        <th>EXTENSION</th>
+      </tr>
+      {% include 'tbl-row.njk' %} 
+    </table>
+</div>
+
+  
