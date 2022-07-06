@@ -542,7 +542,7 @@ content: 'See Less';
   transform-style: preserve-3d;
   cursor: pointer;
   border-radius: 1rem;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.4);
 }
 
 .requisition-grid-container .requisition-grid::before {
@@ -885,6 +885,10 @@ footer {
   align-items: center;
   height: 7vh;
   padding: 0 12rem;
+}
+
+#copyRight {
+  color: var(--color-grey-1);
 }
 
 @keyframes scroll-down {
