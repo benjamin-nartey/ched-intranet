@@ -642,7 +642,7 @@ content: 'See Less';
   transition: all 0.5s;
 }
 
-.requisition img {
+.requisition .material-symbols-outlined {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -650,7 +650,8 @@ content: 'See Less';
   transition: all 0.5s;
   transform-style: preserve-3d;
   transform: translate3d(-50%, -50%, 50px);
-  height: 30rem;
+  font-size: 15rem;
+  color: var(--text-2);
 }
 
 .requisition svg {
