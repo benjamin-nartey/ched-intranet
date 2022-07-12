@@ -1284,3 +1284,38 @@ footer {
     height: 40%;
   }
 }
+
+#myInput {
+  width: 40%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  margin-top: 10rem;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: calc(100% - 3rem);
+  border: 1px solid #ddd;
+  font-size: 18px;
+  margin-bottom: 10rem;
+}
+
+#myTable th,
+#myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header {
+  background-color: #313131;
+  color: #fff;
+}
+#myTable tr:nth-child(2n) {
+  background-color: #f1f1f1;
+}
