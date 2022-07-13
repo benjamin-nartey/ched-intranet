@@ -439,7 +439,7 @@ content: 'See Less';
 .circular-grid > .circular-card {
   width: 100%;
   height: 40rem;
-  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 1rem;
   padding: 3rem;
   overflow: hidden;
@@ -542,7 +542,7 @@ content: 'See Less';
   transform-style: preserve-3d;
   cursor: pointer;
   border-radius: 1rem;
-  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.4);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .requisition-grid-container .requisition-grid::before {
@@ -582,18 +582,6 @@ content: 'See Less';
 }
 
 .requisition-grid-container .requisition-grid-2::before {
-  content: "EXTERNAL";
-}
-
-.requisition-grid-container .requisition-grid-2::after {
-  content: "TRANSPORT";
-}
-
-.requisition-grid-container .requisition-grid-3::before {
-  content: "INTERNAL";
-}
-
-.requisition-grid-container .requisition-grid-3::after {
   content: "TRANSPORT";
 }
 
@@ -606,18 +594,6 @@ content: 'See Less';
 }
 
 .requisition-grid-container .requisition-grid-5::before {
-  content: "SENIOR";
-}
-
-.requisition-grid-container .requisition-grid-5::after {
-  content: "STAFF LEAVE";
-}
-
-.requisition-grid-container .requisition-grid-6::before {
-  content: "JUNIOR";
-}
-
-.requisition-grid-container .requisition-grid-6::after {
   content: "STAFF LEAVE";
 }
 
@@ -650,19 +626,8 @@ content: 'See Less';
   transition: all 0.5s;
   transform-style: preserve-3d;
   transform: translate3d(-50%, -50%, 50px);
-  font-size: 15rem;
+  font-size: 13rem;
   color: var(--text-2);
-}
-
-.requisition svg {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 11;
-  transition: all 0.5s;
-  transform-style: preserve-3d;
-  transform: translate3d(-50%, -50%, 50px);
-  height: 30rem;
 }
 
 .requisition-grid .circle {
@@ -672,38 +637,17 @@ content: 'See Less';
   transform-style: preserve-3d;
   transform: translate3d(95%, 70%, 70px);
   transition: all 0.5s;
-}
-
-.circle-1 {
-  background-color: #9bdc28;
-}
-
-.circle-2 {
-  background-color: #379bf7;
-}
-
-.circle-3 {
-  background-color: #e1e1e1;
-}
-
-.circle-4 {
-  background-color: #9bdc28;
-}
-
-.circle-5 {
-  background-color: #379bf7;
-}
-
-.circle-6 {
-  background-color: #e1e1e1;
-}
-
-.circle-7 {
-  background-color: #e1e1e1;
+  background-color: var(--color-grey-4);
 }
 
 .requisition-grid:hover .circle {
   transform: translate3d(70%, 70%, 70px) scale3d(1.3, 1.3, 1.3);
+  background-color: var(--color-blue);
+}
+
+.requisition-grid:hover .material-symbols-outlined {
+  color: var(--color-blue);
+  transform: translate3d(-50%, -50%, 50px) scale(1.2);
 }
 
 #transport {
@@ -916,7 +860,7 @@ footer {
   top: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--color-grey-1);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 3rem;
   z-index: 10;
 }
@@ -927,7 +871,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--color-grey-4);
+  background-color: rgba(206, 212, 218, 0.8);
   backdrop-filter: blur(3px);
   z-index: 6;
 }
