@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
-    <title>Telephone Exhange</title>
+    <title>CHED Intranet</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -32,98 +32,96 @@
             <a class="nav-link" href="/index.html#requisition">Requisition</a>
         </li>
         <li>
-            <a class="nav-link" href="/telephones">Telephone Exchange</a>
+            <a class="nav-link" href="/telephones/index.html">Telephone Exchange</a>
         </li>
         <li>
             <a class="nav-link" href="#">Admin Panel</a>
         </li>
     </ul>
 </nav>
-    <input
-      type="text"
-      id="myInput"
-      onkeyup="myFunction()"
-      placeholder="Search for names.."
-      title="Type in a name"
-    />
-
-    <table id="myTable" border="1">
-      <tr id="header" class="header">
-        <th>REGION</th>
-        <th>DISTRICT</th>
-        <th>RANK</th>
-        <th>DEPARTMENT</th>
-        <th>Name</th>
-        <th>EXTENSION</th>
-      </tr>
-       <tr class="row">
-        <td>Accra</td>
-        <td>Okaishei</td>
-        <td>Manager</td>
-        <td>ISD</td>
-        <td>Akfreds Futterkiste</td>
-        <td>2244</td>
-      </tr>
-      <tr class="row">
-        <td>Kumasi</td>
-        <td>Sofo</td>
-        <td>Assistant Officer</td>
-        <td>Telephone Exchange</td>
-        <td>Akfreds Nortey</td>
-        <td>2244</td>
-      </tr>
-      <tr class="row">
-        <td>Tarkoradi</td>
-        <td>Anagye</td>
-        <td>Manager</td>
-        <td>Public Affairs</td>
-        <td>Benjamin Coffie</td>
-        <td>2233</td>
-      </tr>
-      <tr class="row">
-        <td>Accra</td>
-        <td>Okaishei</td>
-        <td>Senior Officer</td>
-        <td>ISD</td>
-        <td>Emmanuel Futterkiste</td>
-        <td>2141</td>
-      </tr>
-      <tr class="row">
-        <td>Eastern</td>
-        <td>Kamscodi</td>
-        <td>Senior Officer</td>
-        <td>Public Affairs</td>
-        <td>Rita Afrifa</td>
-        <td>2254</td>
-      </tr>
-      <tr class="row">
-        <td>Accra</td>
-        <td>Okaishei</td>
-        <td>Manager</td>
-        <td>ISD</td>
-        <td>Akfreds Futterkiste</td>
-        <td>2244</td>
-      </tr>
-      <tr class="row">
-        <td>Accra</td>
-        <td>Okaishei</td>
-        <td>Manager</td>
-        <td>ISD</td>
-        <td>Akfreds Futterkiste</td>
-        <td>2244</td>
-      </tr>
-      <tr class="row">
-        <td>Accra</td>
-        <td>Okaishei</td>
-        <td>Manager</td>
-        <td>ISD</td>
-        <td>Akfreds Futterkiste</td>
-        <td>2244</td>
-      </tr>
-    </table> 
    
+    <div class="container">
+      <input
+        type="text"
+        id="myInput"
+        onkeyup="filterTable()"
+        placeholder="Search..."
+        title="Type in a name"
+      />
 
-  <script src="../js/home.js"></script>
+      <table id="myTable" border="1">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src ="../js/home.js"></script>
+
+ <script>
+  
+//API fetching and displaying data from the API in a table format 
+async function loadIntoTable(url, table) {
+  const tableHead = document.querySelector("thead");
+  const tableBody = document.querySelector("tbody");
+  const response = await fetch(url);
+  const { headers, rows } = await response.json();
+
+  tableHead.innerHTML = "<tr id ='header' class = 'header'></tr>";
+  tableBody.innerHTML = "";
+
+  for (const headerText of headers) {
+    const headerElement = document.createElement("th");
+    headerElement.textContent = headerText;
+    tableHead.querySelector("tr").appendChild(headerElement);
+  }
+
+  for (const row of rows) {
+    const rowElement = document.createElement("tr");
+    rowElement.className = "row";
+
+    for (const cellText of row) {
+      const cellTextElement = document.createElement("td");
+      cellTextElement.textContent = cellText;
+      rowElement.appendChild(cellTextElement);
+    }
+
+    tableBody.appendChild(rowElement);
+  }
+}
+
+loadIntoTable("../data.json", document.querySelector("table"));
+
+
+//filter the data in the table
+
+function filterTable() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  var rows = table.getElementsByClassName("row");
+  for (i = 0; i < rows.length; i++) {
+    var cells = rows[i].getElementsByTagName("td");
+    var j;
+    var rowContainsFilter = false;
+    for (j = 0; j < cells.length; j++) {
+      if (cells[j]) {
+        if (cells[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+          rowContainsFilter = true;
+          continue;
+        }
+      }
+    }
+
+    if (!rowContainsFilter) {
+      rows[i].style.display = "none";
+    } else {
+      rows[i].style.display = "";
+    }
+  }
+}
+
+ </script>
 
     <footer class="footer">
     <div class="footer-container">

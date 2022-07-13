@@ -1,7 +1,87 @@
 ---
-title: Telephone Exhange
+title: CHED Intranet
 layout: "telephone-base.njk"
 ---
 
+    <div class="container">
+      <input
+        type="text"
+        id="myInput"
+        onkeyup="filterTable()"
+        placeholder="Search..."
+        title="Type in a name"
+      />
 
-  <script src="../js/home.js"></script>
+      <table id="myTable" border="1">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <script src ="../js/home.js"></script>
+
+ <script>
+  
+//API fetching and displaying data from the API in a table format 
+async function loadIntoTable(url, table) {
+  const tableHead = document.querySelector("thead");
+  const tableBody = document.querySelector("tbody");
+  const response = await fetch(url);
+  const { headers, rows } = await response.json();
+
+  tableHead.innerHTML = "<tr id ='header' class = 'header'></tr>";
+  tableBody.innerHTML = "";
+
+  for (const headerText of headers) {
+    const headerElement = document.createElement("th");
+    headerElement.textContent = headerText;
+    tableHead.querySelector("tr").appendChild(headerElement);
+  }
+
+  for (const row of rows) {
+    const rowElement = document.createElement("tr");
+    rowElement.className = "row";
+
+    for (const cellText of row) {
+      const cellTextElement = document.createElement("td");
+      cellTextElement.textContent = cellText;
+      rowElement.appendChild(cellTextElement);
+    }
+
+    tableBody.appendChild(rowElement);
+  }
+}
+
+loadIntoTable("../data.json", document.querySelector("table"));
+
+
+//filter the data in the table
+
+function filterTable() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  var rows = table.getElementsByClassName("row");
+  for (i = 0; i < rows.length; i++) {
+    var cells = rows[i].getElementsByTagName("td");
+    var j;
+    var rowContainsFilter = false;
+    for (j = 0; j < cells.length; j++) {
+      if (cells[j]) {
+        if (cells[j].innerHTML.toUpperCase().indexOf(filter) > -1) {
+          rowContainsFilter = true;
+          continue;
+        }
+      }
+    }
+
+    if (!rowContainsFilter) {
+      rows[i].style.display = "none";
+    } else {
+      rows[i].style.display = "";
+    }
+  }
+}
+
+ </script>
