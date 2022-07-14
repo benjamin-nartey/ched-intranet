@@ -119,3 +119,40 @@ menuToggle.addEventListener("click", function () {
   }
 });
 
+//REQUISITION MODAL
+let embededPDF = document.createElement("embed");
+// embededPDF.src = "img/chS.pdf";
+embededPDF.type = "application/pdf";
+embededPDF.style.width = "100%";
+embededPDF.style.height = "100%";
+
+let requisitionModal = document.createElement("div");
+requisitionModal.className = "modal";
+requisitionModal.classList.add("circular-modal");
+requisitionModal.classList.add("hidden");
+document.body.appendChild(requisitionModal);
+
+let medicalRequistion = document.querySelector(".requisition-grid-1");
+let pettyCashRequisition = document.querySelector(".requisition-grid-4");
+let maintenanceRequisition = document.querySelector(".requisition-grid-7");
+
+medicalRequistion.addEventListener("click", function () {
+  embededPDF.src = "img/chS.pdf";
+  requisitionModal.appendChild(embededPDF);
+  requisitionModal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+});
+
+pettyCashRequisition.addEventListener("click", function () {
+  embededPDF.src = "img/Statement_44273_54913_17.pdf";
+  requisitionModal.appendChild(embededPDF);
+  requisitionModal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+});
+
+maintenanceRequisition.addEventListener("click", function () {
+  embededPDF.src = "img/chS.pdf";
+  requisitionModal.appendChild(embededPDF);
+  requisitionModal.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+});

@@ -1,34 +1,13 @@
 {
-  "headers": [
-    "Id",
-    "Region",
-    "District",
-    "Rank",
-    "Department",
-    "Name",
-    "Extension"
-  ],
   "rows": [
-    [1, "Accra", "Okaishie", "Manager", "ISD", "Bejamin Nartey", "2244"],
-    [2, "Accra", "Okaishie", "Manager", "ISD", "Emmanuel Weija", "2233"],
-    [3, "Kumasi", "Kenyasi", "Manager", "ISD", "Emmanuel Asare", "2133"],
-    [4, "Accra", "Okaishie", "Manager", "ISD", "Bejamin Nartey", "2244"],
-    [5, "Accra", "Okaishie", "Manager", "ISD", "Emmanuel Weija", "2233"],
-    [6, "Kumasi", "Kenyasi", "Manager", "ISD", "Emmanuel Asare", "2133"],
-    [7, "Accra", "Okaishie", "Manager", "ISD", "Bejamin Nartey", "2244"],
-    [8, "Accra", "Okaishie", "Manager", "ISD", "Emmanuel Weija", "2233"],
-    [9, "Kumasi", "Kenyasi", "Manager", "ISD", "Emmanuel Asare", "2133"],
-    [10, "Accra", "Okaishie", "Manager", "ISD", "Bejamin Nartey", "2244"],
-    [11, "Accra", "Okaishie", "Manager", "ISD", "Emmanuel Weija", "2233"],
-    [12, "Kumasi", "Kenyasi", "Manager", "ISD", "Emmanuel Asare", "2133"],
-    [13, "Accra", "Okaishie", "Manager", "ISD", "Bejamin Nartey", "2244"],
-    [14, "Accra", "Okaishie", "Manager", "ISD", "Emmanuel Weija", "2233"],
-    [15, "Kumasi", "Kenyasi", "Manager", "ISD", "Emmanuel Asare", "2133"],
-    [16, "Accra", "Okaishie", "Manager", "ISD", "Bejamin Nartey", "2244"],
-    [17, "Accra", "Okaishie", "Manager", "ISD", "Emmanuel Weija", "2233"],
-    [18, "Kumasi", "Kenyasi", "Manager", "ISD", "Emmanuel Asare", "2133"],
-    [19, "Accra", "Okaishie", "Manager", "ISD", "Bejamin Nartey", "2244"],
-    [20, "Accra", "Okaishie", "Manager", "ISD", "Emmanuel Weija", "2233"],
-    [21, "Kumasi", "Kenyasi", "Manager", "ISD", "Emmanuel Asare", "2133"]
+    [
+      "ID",
+      "REG_NAME",
+      "DIST_NAME",
+      "RANK_NAME",
+      "DEPT_NAME",
+      "FILE_NAME",
+      "FILE_TELTHIRD"
+    ]
   ]
 }

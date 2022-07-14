@@ -64,24 +64,29 @@ async function loadIntoTable(url, table) {
   const tableHead = document.querySelector("thead");
   const tableBody = document.querySelector("tbody");
   const response = await fetch(url);
-  const { headers, rows } = await response.json();
+  const {data} = await response.json();
+  console.log(data);
 
-  tableHead.innerHTML = "<tr id ='header' class = 'header'></tr>";
+
+  tableHead.innerHTML = `<tr id ='header' class = 'header'>
+    <th>ID</th>
+        <th>REGION</th>
+        <th>DISTRICT</th>
+        <th>RANK</th>
+        <th>DEPARTMENT</th>
+        <th>Name</th>
+        <th>EXTENSION</th></tr>`;
   tableBody.innerHTML = "";
 
-  for (const headerText of headers) {
-    const headerElement = document.createElement("th");
-    headerElement.textContent = headerText;
-    tableHead.querySelector("tr").appendChild(headerElement);
-  }
+  
 
-  for (const row of rows) {
+  for (const row of data) {
     const rowElement = document.createElement("tr");
     rowElement.className = "row";
 
-    for (const cellText of row) {
+    for (const cellText in row) {
       const cellTextElement = document.createElement("td");
-      cellTextElement.textContent = cellText;
+      cellTextElement.textContent = `${row[cellText]}`;
       rowElement.appendChild(cellTextElement);
     }
 
@@ -89,7 +94,7 @@ async function loadIntoTable(url, table) {
   }
 }
 
-loadIntoTable("../data.json", document.querySelector("table"));
+loadIntoTable("https://ched.com.gh/applications/exchange/api/post/read.php", document.querySelector("table"));
 
 
 //filter the data in the table
