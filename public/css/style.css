@@ -911,6 +911,66 @@ footer {
   display: none;
 }
 
+/*==================table css========================*/
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+}
+#myInput {
+  margin-top: 10rem;
+  width: 35rem;
+  font-size: 1.5rem;
+  padding: 1.2rem 2rem 1.2rem 4rem;
+  border: none;
+  margin-bottom: 5rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#myInput:focus {
+  outline: none;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: calc(100% - 10rem);
+  border: none;
+  font-size: 1.6rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-bottom: 10rem;
+  overflow-x: scroll;
+}
+
+#myTable th,
+#myTable td {
+  text-align: center;
+  padding: 12px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+#myTable td {
+  font-weight: 500;
+  color: var(--text-2);
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header {
+  background-color: #313131;
+  color: #fff;
+}
+#myTable tr:nth-child(2n) {
+  background-color: #f1f1f1;
+}
+
 /*ANIMATION KEYFRAMES*/
 
 @keyframes move-right {
@@ -1258,54 +1318,12 @@ footer {
     width: 90%;
     height: 40%;
   }
-}
 
-/*==================table css========================*/
+  #myInput {
+    width: calc(100% - 2rem);
+  }
 
-.container {
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-items: center;
-}
-#myInput {
-  width: 35rem;
-  font-size: 1.5rem;
-  padding: 1.2rem 2rem 1.2rem 4rem;
-  border: none;
-  margin-top: 10rem;
-  margin-bottom: 5rem;
-  border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-
-#myInput:focus {
-  outline: none;
-}
-
-#myTable {
-  border-collapse: collapse;
-  width: calc(100% - 10rem);
-  border: none;
-  font-size: 18px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  margin-bottom: 10rem;
-}
-
-#myTable th,
-#myTable td {
-  text-align: center;
-  padding: 12px;
-}
-
-#myTable tr {
-  border-bottom: 1px solid #ddd;
-}
-
-#myTable tr.header {
-  background-color: #313131;
-  color: #fff;
-}
-#myTable tr:nth-child(2n) {
-  background-color: #f1f1f1;
+  .container {
+    align-items: flex-start;
+  }
 }
