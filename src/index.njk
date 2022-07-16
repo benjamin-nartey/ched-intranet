@@ -13,24 +13,30 @@ layout: "base.njk"
       <div class="circle circle-1"></div>
 <span class="material-symbols-outlined">medical_information</span>
     </div>
-    <div class="requisition-grid requisition-grid-2">
+    <div class="requisition-grid requisition-grid-2 " id ="transportCard">
       <h2>Transport</h2>
       <div class="circle circle-2"></div>
      <span class="material-symbols-outlined">local_shipping</span>
-     <div class ="popup hidden" >
-      <div class= "popup-top"><h4>Internal Transport</h4></div>
-      <div class= "popup-down"><h4>External Transport</h4></div>
+     <div class ="popup hidden" id = "transportPopup" >
+      <div class= "popup-top internal-transport"><h4>Internal Transport</h4></div>
+      <div class= "popup-down external-transport"><h4>External Transport</h4></div>
      </div>
+     <div class = "card-overlay hidden" id = "transportCardOverlay"></div>
     </div>
     <div class="requisition-grid requisition-grid-4">
       <h2>Petty Cash</h2>
       <div class="circle circle-4"></div>
      <span class="material-symbols-outlined">payments</span>
     </div>
-    <div class="requisition-grid requisition-grid-5">
+    <div class="requisition-grid requisition-grid-5" id = "staffLeave">
       <h2>Staff Leave</h2>
       <div class="circle circle-5"></div>
     <span class="material-symbols-outlined">group_remove</span>
+     <div class ="popup hidden" id = "staffLeavePopup"  >
+      <div class= "popup-top senior-staff"><h4>Senior Staff</h4></div>
+      <div class= "popup-down junior-staff"><h4>Junior Staff</h4></div>
+     </div>
+     <div class = "card-overlay hidden" id = "staffLeaveCardOverlay"></div>
     </div>
    
     <div class="requisition-grid requisition-grid-7">
