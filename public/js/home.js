@@ -128,7 +128,6 @@ window.addEventListener("load", function () {
 
   //creating embeded pdf element
   let embededPDF = document.createElement("embed");
-  // embededPDF.src = "img/chS.pdf";
   embededPDF.type = "application/pdf";
   embededPDF.style.width = "100%";
   embededPDF.style.height = "100%";
@@ -155,21 +154,21 @@ window.addEventListener("load", function () {
 
   //adding click event to requisition cards
   medicalRequistion.addEventListener("click", function () {
-    embededPDF.src = "img/chS.pdf";
+    embededPDF.src = "img/medicalClaim.pdf";
     requisitionModal.appendChild(embededPDF);
     requisitionModal.classList.remove("hidden");
     overlay.classList.remove("hidden");
   });
 
   pettyCashRequisition.addEventListener("click", function () {
-    embededPDF.src = "img/Statement_44273_54913_17.pdf";
+    embededPDF.src = "img/pettyCash.pdf";
     requisitionModal.appendChild(embededPDF);
     requisitionModal.classList.remove("hidden");
     overlay.classList.remove("hidden");
   });
 
   maintenanceRequisition.addEventListener("click", function () {
-    embededPDF.src = "img/chS.pdf";
+    embededPDF.src = "img/maintenanceRequest.pdf";
     requisitionModal.appendChild(embededPDF);
     requisitionModal.classList.remove("hidden");
     overlay.classList.remove("hidden");
@@ -199,14 +198,14 @@ window.addEventListener("load", function () {
   });
 
   seniorStaff.addEventListener("click", function () {
-    embededPDF.src = "img/Statement_44273_54913_17.pdf";
+    embededPDF.src = "img/seniorStaffLeaveForm.pdf";
     requisitionModal.appendChild(embededPDF);
     requisitionModal.classList.remove("hidden");
     overlay.classList.remove("hidden");
   });
 
   juniorStaff.addEventListener("click", function () {
-    embededPDF.src = "img/chS.pdf";
+    embededPDF.src = "img/juniorStaffLeaveForm.pdf";
     requisitionModal.appendChild(embededPDF);
     requisitionModal.classList.remove("hidden");
     overlay.classList.remove("hidden");
