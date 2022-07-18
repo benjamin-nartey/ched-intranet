@@ -184,14 +184,14 @@ window.addEventListener("load", function () {
   });
 
   externalTransport.addEventListener("click", function () {
-    embededPDF.src = "img/Statement_44273_54913_17.pdf";
+    embededPDF.src = "img/externalTransport.pdf";
     requisitionModal.appendChild(embededPDF);
     requisitionModal.classList.remove("hidden");
     overlay.classList.remove("hidden");
   });
 
   internalTransport.addEventListener("click", function () {
-    embededPDF.src = "img/chS.pdf";
+    embededPDF.src = "img/internalTransport.pdf";
     requisitionModal.appendChild(embededPDF);
     requisitionModal.classList.remove("hidden");
     overlay.classList.remove("hidden");
