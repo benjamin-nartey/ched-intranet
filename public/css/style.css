@@ -353,12 +353,12 @@ content: 'See Less';
 }
 
 .news-grid .container-grid .content .news-header {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 500;
   margin-bottom: 2rem;
   margin-top: 3rem;
   color: var(--text-1);
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .news-grid .container-grid .content .news-content {
